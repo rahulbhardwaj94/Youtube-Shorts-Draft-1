@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.title {
+    display: flex;
+    font-size: 2rem;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.title img {
+    width: 5rem;
+    display: flex;
+}
+
+
+.title h1 {
+    margin-left: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+span {
+    color: red;
+}
+
+/* Loader */
+
+
+.loader {
+
+    background-image: url(./rdj_image.jpg);
+    background-position: center;
+    opacity: 0.6;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.loader:hover {
+    opacity: 1;
+}
+
+
+.elements {
+    width: 1rem;
+    height: 3rem;
+    background-color:rgb(160, 156, 156);
+    border-radius: 10px;
+    margin: 100px 7px;
+    background-color: aliceblue;
+    animation: myloader 4s infinite ;
+}
+
+@keyframes myloader {
+    0%,100%{
+        height: 2rem;
+    }
+    50%{
+        height: 8rem;
+        background-color: rgb(224, 67, 67);
+    }
+}
+
+#ele1 {
+    margin-left: 75px;
+}
+
+#ele1 , #ele5 {
+    animation-name: myloader;
+    animation-delay: 1s;
+
+}
+
+#ele2 , #ele4 {
+    animation-name: myloader;
+    animation-delay: 2s;
+    animation-direction: reverse;
+
+}
+
+
+/* Footer  */
+
+.footer {
+    margin-top: 30rem;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 2rem;
+}
